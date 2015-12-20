@@ -16,10 +16,11 @@ class CreateDesarrollosTable extends Migration {
 		{
 			$table->timestamps();
 
-			$table->integer('grupo_id')->unsigned();
-			$table->integer('proyecto_id')->unsigned();
-			$table->foreign('grupo_id')->references('id')->on('grupos')->onDelete('cascade');
-			$table->foreign('proyecto_id')->references('id')->on('proyectos')->onDelete('cascade');
+			$table->integer('id_grupo')->unsigned();
+			$table->integer('id_proyecto')->unsigned();
+
+			$table->foreign('id_grupo')->references('id_grupo')->on('grupos')->onDelete('cascade');
+			$table->foreign('id_proyecto')->references('id_proyecto')->on('proyectos')->onDelete('cascade');
 
 		});
 	}

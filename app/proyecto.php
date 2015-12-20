@@ -6,7 +6,7 @@ class proyecto extends Model {
 
     protected $table= "proyectos";
 
-    protected $fillable=['titulo','tipoProyecto','descripcion','estadoRegistroProyecto','supervisor_id'];
+    protected $fillable=['id_proyecto','titulo','tipo_proyecto','descripcion','estado_registro_proyecto','id_supervisor'];
 
 
 }

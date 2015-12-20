@@ -14,20 +14,11 @@ class CreateParticipantesTable extends Migration {
 	{
 		Schema::create('participantes', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->string('estadoRegistroP');
-			$table->string('curso');
-			$table->string('seccion');
+			$table->increments('id_participante')->unique();
 			$table->timestamps();
-			//$table->primary(['id', 'estadoRegistroP']);
 
-
-			$table->integer('rol_id')->unsigned();
-			$table->integer('usuario_id')->unsigned();
-
-
-			$table->foreign('rol_id')->references('id')->on('roles')->onDelete('cascade');
-			$table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+			$table->string('rut_usuario')->unsigned();
+			$table->foreign('rut_usuario')->references('rut_usuario')->on('usuarios')->onDelete('cascade');
 
 		});
 	}

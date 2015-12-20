@@ -6,6 +6,6 @@ class grupo extends Model {
 
     protected $table= "grupos";
 
-    protected $fillable=['numeroIntegrantes','participante_id'];
+    protected $fillable=['nid_grupo','id_participante'];
 
 }
