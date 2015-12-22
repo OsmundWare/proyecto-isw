@@ -27,7 +27,7 @@ class CreateParticipantesTable extends Migration {
 
 
 			$table->foreign('rol_id')->references('id')->on('roles')->onDelete('cascade');
-			$table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+			$table->foreign('usuario_id')->references('rut')->on('usuarios')->onDelete('cascade');
 
 		});
 	}

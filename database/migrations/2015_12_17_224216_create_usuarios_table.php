@@ -14,17 +14,17 @@ class CreateUsuariosTable extends Migration {
 	{
 		Schema::create('usuarios', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->string('rut',12);
+
+			$table->integer('rut',12)->unique();
 			$table->string('nombre');
 			$table->string('apellidoP',64);
 			$table->string('apellidoM',64);
 			$table->string('email')->unique();
-			$table->string('password', 60);
-			$table->boolean('estadoRegistro');
+			$table->string('password', 120);
+			$table->boolean('estadoRegistro')->default(false);
 			$table->enum('type',['member','admin'])->default('member');
 			$table->rememberToken();
-			$table->string('url_avatar', 47);
+			//$table->string('url_avatar', 47);
 			$table->softDeletes();
 			$table->timestamps();
 		});

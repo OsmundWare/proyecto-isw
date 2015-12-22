@@ -21,9 +21,10 @@ class CreateGruposTable extends Migration {
 
 
 			$table->integer('participante_id')->unsigned();
-			//$table->integer('estadoRegistro')->unsigned();
+			//$table->integer('estadoRegistroP_id')->unsigned();
+
 			$table->foreign('participante_id')->references('id')->on('participantes')->onDelete('cascade');
-			//$table->foreign('estadoRegistro')->references('id')->on('participantes')->onDelete('cascade');
+			//$table->foreign('estadoRegistroP_id')->references('id')->on('participantes')->onDelete('cascade');
 
 		});
 	}

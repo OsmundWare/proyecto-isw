@@ -20,8 +20,11 @@ class CreateRegistrosTable extends Migration {
 
 			$table->integer('participante_id')->unsigned();
 			$table->integer('supervisor_id')->unsigned();
+			//$table->integer('estadoRegistroP_id')->unsigned();
+
 			$table->foreign('participante_id')->references('id')->on('participantes')->onDelete('cascade');
 			$table->foreign('supervisor_id')->references('id')->on('supervisores')->onDelete('cascade');
+			//$table->foreign('estadoRegistroP_id')->references('id')->on('participantes')->onDelete('cascade');
 
 
 		});
