@@ -137,6 +137,11 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 
 		/*
+		 * vendor services providers
+		 */
+		'Collective\Html\HtmlServiceProvider',
+
+		/*
 		 * Application Service Providers...
 		 */
 		'App\Providers\AppServiceProvider',
@@ -193,6 +198,11 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
+		/*
+		 *vendor aliases
+		 */
+		'Form' => 'Collective\Html\FormFacade',
+		'Html' => 'Collective\Html\HtmlFacade',
 	],
 
 ];

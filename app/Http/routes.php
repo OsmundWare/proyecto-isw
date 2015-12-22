@@ -20,4 +20,6 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('grupos.create','GruposController@index');
+Route::get('grupos.create','GruposController@create');
+
+Route::get('grupos.destroy','GruposVontroller@destroy');
