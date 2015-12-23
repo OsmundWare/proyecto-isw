@@ -13,7 +13,12 @@ class CreateGruposTable extends Migration {
 			$table->increments('id_grupo')->unique();
 			$table->string('nombre_grupo');
 			$table->timestamps();
+<<<<<<< HEAD
+			$table->integer('id_participante')->unsigned();
+			$table->foreign('id_participante')->references('id_participante')->on('participantes')->onDelete('cascade');
+=======
 
+>>>>>>> origin/master
 		});
 	}
 

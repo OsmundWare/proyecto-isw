@@ -15,10 +15,8 @@ class CreateDesarrollosTable extends Migration {
 		Schema::create('desarrollos', function(Blueprint $table)
 		{
 			$table->timestamps();
-
 			$table->integer('id_grupo')->unsigned();
 			$table->integer('id_proyecto')->unsigned();
-
 			$table->foreign('id_grupo')->references('id_grupo')->on('grupos')->onDelete('cascade');
 			$table->foreign('id_proyecto')->references('id_proyecto')->on('proyectos')->onDelete('cascade');
 

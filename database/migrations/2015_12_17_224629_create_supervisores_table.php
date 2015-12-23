@@ -16,7 +16,6 @@ class CreateSupervisoresTable extends Migration {
 		{
 			$table->increments('id_supervisor')->unique();
 			$table->timestamps();
-
 			$table->string('rut_usuario')->unsigned();
 			$table->foreign('rut_usuario')->references('rut_usuario')->on('usuarios')->onDelete('cascade');
 
