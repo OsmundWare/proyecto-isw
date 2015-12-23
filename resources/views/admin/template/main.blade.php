@@ -13,6 +13,7 @@
     <!--permite incluir en la plantilla otra vista en este caso la de navegacion -->
     @include('admin.template.partial.nav')
     <section>
+
         @yield('content')
 
     </section>
@@ -25,6 +26,7 @@
     <div class="container">
         @yield('contenido')
     </div>
+
 </body>
 
 </html>
