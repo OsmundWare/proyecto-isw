@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\usuario;
 
-class DatabaseSeeder extends Seeder {
+class UsuariosSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.
@@ -12,9 +13,7 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		Model::unguard();
-
-		// $this->call('UserTableSeeder');
+		//
 	}
 
 }
