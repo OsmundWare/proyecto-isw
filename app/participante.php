@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class participante extends Model {
 
-
+//
     protected $table= "participantes";
     protected $primaryKey='id_participante';
     protected $fillable=['id_participante','rut_usuario'];

@@ -10,5 +10,5 @@ class grupo extends Model {
 
     public function participantes(){
         return $this->hasMany('app/participante');
-    }
+    }//
 }

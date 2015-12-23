@@ -37,6 +37,7 @@ class registrosController extends Controller {
 		$exito =$varuser->save();
 		if ($exito) {
 			return "Almacenado con exito";
+
 		} else {
 			return "No se guardo";
 		}
