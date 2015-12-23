@@ -39,7 +39,6 @@ Route::group(['prefix' => 'admin'], function(){
 
 
 
-
 Route::resource('grupos','GruposController');
 
 Route::get('grupos/{id}/agregar','GruposController@agregar');

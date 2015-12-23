@@ -26,6 +26,7 @@ class GruposController extends Controller {
 	 * @return Response
 	 */
 	public function create()
+
 	{
 		return view('grupos.create');
 	}
@@ -85,7 +86,7 @@ class GruposController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		grupos::destroy(id_grupo);
+		//
 	}
 
 	public function agregar($id){
