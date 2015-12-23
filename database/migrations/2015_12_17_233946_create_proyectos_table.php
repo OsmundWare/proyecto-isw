@@ -18,7 +18,7 @@ class CreateProyectosTable extends Migration {
 			$table->string('titulo',140);
 			$table->string('tipo_proyecto',255);
 			$table->string('descripcion',255);
-			$table->boolean('estado_registro_proyecto');
+			$table->string('estado_registro_proyecto')->nullable()->default('pendiente');
 			$table->timestamps();
 
 

@@ -21,7 +21,7 @@ class CreateUsuariosTable extends Migration {
 			$table->string('correo')->unique();
 			$table->string('asignatura',50);
 			$table->string('password', 60);
-			$table->boolean('aprobacion',false);
+			$table->string('aprobacion')->nullable()->default('pendiente');
 			$table->timestamps();
 		});
 	}
