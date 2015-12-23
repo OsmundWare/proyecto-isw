@@ -15,7 +15,7 @@ class CreateRegistrosTable extends Migration {
 		Schema::create('registros', function(Blueprint $table)
 		{
 			$table->increments('id_registro')->unique();
-			$table->boolean('estado_registrio');
+			$table->string('estado_registrio')->nullable()->default('pendiente');
 			$table->timestamps();
 
 			$table->integer('id_supervisor')->unsigned();

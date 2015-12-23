@@ -138,6 +138,11 @@ return [
 		'Collective\Html\HtmlServiceProvider',
 
 		/*
+		 * vendor services providers
+		 */
+		'Collective\Html\HtmlServiceProvider',
+
+		/*
 		 * Application Service Providers...
 		 */
 		'App\Providers\AppServiceProvider',
@@ -196,6 +201,11 @@ return [
 		'Form' 		=> 'Collective\Html\FormFacade',
 		'Html' 		=> 'Collective\Html\HtmlFacade',
 
+		/*
+		 *vendor aliases
+		 */
+		'Form' => 'Collective\Html\FormFacade',
+		'Html' => 'Collective\Html\HtmlFacade',
 	],
 
 ];

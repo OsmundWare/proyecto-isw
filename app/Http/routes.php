@@ -34,5 +34,12 @@ Route::group(['prefix' => 'admin'], function(){
         'as'   => 'admin.usuario.destroy'
 
     ]);
-
 });
+/*<<<<<<< HEAD
+});
+=======
+Route::get('grupos.create','GruposController@create');
+
+Route::get('grupos.destroy','GruposVontroller@destroy');
+>>>>>>> origin/master
+*/

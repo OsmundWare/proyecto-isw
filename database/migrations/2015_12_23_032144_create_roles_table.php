@@ -13,16 +13,16 @@ class CreateRolesTable extends Migration {
 	public function up()
 	{
 		schema::create('roles', function(Blueprint $table)
-	{
-		$table->integer('id_rol')->unique();
-		$table->string('nombre_rol',50);
-		$table->integer('prioridad');
-		$table->timestamps();
+		{
+			$table->integer('id_rol')->unique();
+			$table->string('nombre_rol',50);
+			$table->integer('prioridad');
+			$table->timestamps();
 
-		$table->integer('id_participante')->unsigned();
-		$table->foreign('id_participante')->references('id_participante')->on('participantes')->onDelete('cascade');
+			$table->integer('id_participante')->unsigned();
+			$table->foreign('id_participante')->references('id_participante')->on('participantes')->onDelete('cascade');
 
-	});
+		});
 	}
 
 	/**
@@ -36,6 +36,3 @@ class CreateRolesTable extends Migration {
 	}
 
 }
-
-
-

@@ -18,7 +18,7 @@ class CreateProyectosTable extends Migration {
 			$table->string('titulo',140);
 			$table->string('tipo_proyecto',255);
 			$table->string('descripcion',255);
-			$table->boolean('estado_registro_proyecto');
+			$table->string('estado_registro_proyecto')->nullable()->default('pendiente');
 			$table->timestamps();
 			$table->integer('id_supervisor')->unsigned();
 			$table->foreign('id_supervisor')->references('id_supervisor')->on('supervisores')->onDelete('cascade');
