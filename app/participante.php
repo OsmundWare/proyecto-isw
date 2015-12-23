@@ -7,7 +7,7 @@ class participante extends Model {
 
     protected $table= "participantes";
 
-    protected $fillable=['estadoRegistroP','curso','seccion'];
+    protected $fillable=['id_participante','rut_usuario'];
 
 
 }

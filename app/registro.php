@@ -8,6 +8,6 @@ class registro extends Model {
 
     protected $table= "registros";
 
-    protected $fillable=['fecha','participante_id','supervisro_id'];
+    protected $fillable=['id_registro','estado_registro','id_supervisor','id_participante','id_grupo'];
 
 }

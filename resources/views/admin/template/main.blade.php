@@ -14,11 +14,17 @@
     @include('admin.template.partial.nav')
     <section>
         @yield('content')
+
     </section>
 
     <!-- Integrando bootstrap javascript y jquery -->
     {!! Html::script('plugins/jquery/js/jquery-2.1.4.js') !!}
     {!! Html::script('plugins/bootstrap/js/bootstrap.js') !!}
+
+
+    <div class="container">
+        @yield('contenido')
+    </div>
 </body>
 
 </html>

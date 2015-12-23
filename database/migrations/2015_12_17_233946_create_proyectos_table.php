@@ -14,17 +14,14 @@ class CreateProyectosTable extends Migration {
 	{
 		Schema::create('proyectos', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->string('titulo');
-			$table->string('tipoProyecto');
-			$table->string('descripcion');
-			$table->string('estadoRegistroProyecto');
+			$table->increments('id_proyecto')->unique();
+			$table->string('titulo',140);
+			$table->string('tipo_proyecto',255);
+			$table->string('descripcion',255);
+			$table->boolean('estado_registro_proyecto');
 			$table->timestamps();
-
-
-			$table->integer('supervisor_id')->unsigned();
-			$table->foreign('supervisor_id')->references('id')->on('supervisores')->onDelete('cascade');
-
+			$table->integer('id_supervisor')->unsigned();
+			$table->foreign('id_supervisor')->references('id_supervisor')->on('supervisores')->onDelete('cascade');
 		});
 	}
 

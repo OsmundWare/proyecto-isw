@@ -6,6 +6,6 @@ class desarrollo extends Model {
 
     protected $table= "desarrollos";
 
-    protected $fillable=['grupo_id','proyecto_id'];
+    protected $fillable=['id_grupo','id_proyecto'];
 
 }

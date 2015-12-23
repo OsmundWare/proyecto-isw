@@ -2,11 +2,11 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class supervisore extends Model {
+class supervisor extends Model {
 
     protected $table= "supervisores";
 
-    protected $fillable=['asignatura','usuario_id'];
+    protected $fillable=['id_supervisor','rut_usuario'];
 
 
 }

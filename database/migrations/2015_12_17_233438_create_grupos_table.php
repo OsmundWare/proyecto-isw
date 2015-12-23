@@ -14,18 +14,10 @@ class CreateGruposTable extends Migration {
 	{
 		Schema::create('grupos', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->integer('numeroIntegrantes');
+			$table->increments('id_grupo')->unique();
 			$table->timestamps();
-
-
-
-			$table->integer('participante_id')->unsigned();
-			//$table->integer('estadoRegistroP_id')->unsigned();
-
-			$table->foreign('participante_id')->references('id')->on('participantes')->onDelete('cascade');
-			//$table->foreign('estadoRegistroP_id')->references('id')->on('participantes')->onDelete('cascade');
-
+			$table->integer('id_participante')->unsigned();
+			$table->foreign('id_participante')->references('id_participante')->on('participantes')->onDelete('cascade');
 		});
 	}
 
