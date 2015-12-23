@@ -32,7 +32,7 @@ Route::group(['prefix' => 'admin'], function(){
 
         'uses' => 'registrosController@destroy',
         'as'   => 'admin.usuario.destroy'
-
+//
     ]);
 
 });
