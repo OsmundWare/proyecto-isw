@@ -19,12 +19,9 @@ class CreateParticipantesTable extends Migration {
 			$table->string('rut_usuario')->unsigned();
 			$table->foreign('rut_usuario')->references('rut_usuario')->on('usuarios')->onDelete('cascade');
 
-<<<<<<< HEAD:database/migrations/2015_12_17_225359_create_participantes_table.php
 
-=======
 			$table->integer('id_grupo')->unsigned();
 			$table->foreign('id_grupo')->references('id_grupo')->on('grupos')->onDelete('cascade');
->>>>>>> origin/master:database/migrations/2015_12_23_032030_create_participantes_table.php
 		});
 	}
 
