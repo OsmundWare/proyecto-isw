@@ -5,11 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateRegistrosTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
+	//
 	public function up()
 	{
 		Schema::create('registros', function(Blueprint $table)
