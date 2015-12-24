@@ -17,7 +17,10 @@ class GruposController extends Controller {
 	 */
 	public function index()
 	{
-		return('');
+		$idgroup = grupo::orderBy('id_grupo','nombre_grupo')->paginate(2);
+
+		return view('grupos.index', compact('idgroup'));
+
 	}
 
 	/**
@@ -36,7 +39,7 @@ class GruposController extends Controller {
 		$grupo = new grupo();
 		$grupo->nombre_grupo=\Input::get('nombre');
 		if($grupo->save()){
-			return 'Grupo creado';
+			return 'grupos creado';
 		}
 		else{
 			return 'fallo creacion de grupo';
@@ -86,7 +89,7 @@ class GruposController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+
 	}
 
 	public function agregar($id){
