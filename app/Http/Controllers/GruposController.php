@@ -29,7 +29,6 @@ class GruposController extends Controller {
 	 * @return Response
 	 */
 	public function create()
-
 	{
 		return view('grupos.create');
 	}

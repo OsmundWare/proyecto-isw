@@ -18,7 +18,6 @@
                     <li><a href="{{route('admin.usuario.index')}}">Mostrar Lista Participantes</a></li>
                     <li><a href="{{route('admin.usuario.create')}}">Registrar Participante </a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
                 </ul>
             </li>
         </ul>
@@ -32,7 +31,6 @@
                     <li><a href="{{route('grupos.index')}}">ver grupos</a></li>
                     <li><a href="{{route('grupos.create')}}">Registrar nuevo grupo</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
                 </ul>
             </li>
         </ul>
@@ -47,7 +45,6 @@
                     <li><a href="{{route('admin.usuario.index')}}">Mostrar Lista de Aspirantes</a></li>
                     <li><a href="{{route('admin.usuario.create')}}">Registrar Nuevo Aspirante</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
                 </ul>
             </li>
         </ul>
