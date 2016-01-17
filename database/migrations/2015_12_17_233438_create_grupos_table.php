@@ -14,9 +14,6 @@ class CreateGruposTable extends Migration {
 			$table->string('nombre_grupo');
 			$table->timestamps();
 
-			$table->integer('id_participante')->unsigned();
-			$table->foreign('id_participante')->references('id_participante')->on('participantes')->onDelete('cascade');
-
 		});
 	}
 

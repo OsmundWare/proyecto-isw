@@ -1,4 +1,4 @@
-@extends('inicio')
+@extends('admin.template.main')
 
 @section('contenido')
     <div class="container">
@@ -8,7 +8,7 @@
     </div>
 
 
-    {!! Form::open(['url' => 'grupos.','class'=>'form-inline']) !!}
+    {!! Form::open(['url' => 'grupos','class'=>'form-inline']) !!}
     <div class="form-group">
         {!! Form::label('rut', 'ingrese rut',['class'=>'control-label']) !!}
         {!! Form::text('rut', null,['class'=>'form-control']) !!}

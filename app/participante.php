@@ -10,6 +10,7 @@ class participante extends Model {
     protected $fillable=['id_participante','rut_usuario'];
 
     public function usuarios(){
+
         return $this->belongsTo('app/grupo');
     }
 
