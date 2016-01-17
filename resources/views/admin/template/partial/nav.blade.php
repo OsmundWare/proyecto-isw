@@ -1,12 +1,10 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
 
-        <h3>Proyecto Ingenieria de Softeware</h3>
 
 
-
-
-
+        <h2 class="text-center"   role="button" ></a>Proyecto Ingenieria de Software</h2>
+        <a href="{{route('welcome')}}">Inicio</a>
 
 
 

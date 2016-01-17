@@ -7,16 +7,14 @@
     <title>@yield('title','Default') | Panel de administración</title>
     <!-- INTEGRAMOS BOOTSTRAP css AL PROYECTO-->
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
+
 </head>
 
 <body>
+
     <!--permite incluir en la plantilla otra vista en este caso la de navegacion -->
     @include('admin.template.partial.nav')
-    <section>
 
-        @yield('content')
-
-    </section>
 
     <!-- Integrando bootstrap javascript y jquery -->
     {!! Html::script('plugins/jquery/js/jquery-2.1.4.js') !!}
@@ -25,6 +23,7 @@
 
     <div class="container">
         @yield('contenido')
+
     </div>
 
 </body>

@@ -54,10 +54,13 @@
         </div>
 
         <div class="form-group">
-            {!! Form::label('password','Password') !!}
+           {!! Form::label('password','Password') !!}
             {!! Form::password('password',['class'=>'form-control','placeholder'=> '*************','required']) !!}
         </div>
-
+    <div class="form-group">
+       {!! Form::label('password2','Password') !!}
+        {!! Form::password('password2',['class'=>'form-control','placeholder'=> '*************','required']) !!}
+    </div>
 
 
         <div class="form-group">
@@ -68,3 +71,4 @@
 
 </div>
 @endsection
+

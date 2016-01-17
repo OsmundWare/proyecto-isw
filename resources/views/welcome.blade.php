@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-@extends('admin.template.main');
-=======
-<html>
-	<head>
-		<title>Laravel</title>
+@extends('admin.template.main')
+@section('title','Bienvenido')
 
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
->>>>>>> origin/master
+@section('contenido')
 
-@section('title','Inicio')
+	<h1>Bienvenido</h1>
+	<div>El repositorio de este proyecto está en: <a href="https://github.com/OsmundWare/proyecto-isw">https://github.com/OsmundWare/proyecto-isw</a></div>
 
 
-@section('content')
-    <h1>hola mundo</h1>
-    <a href="" class="btn btn-danger">soy un boton de bootstrap</a>
-
-@endsection
+@stop

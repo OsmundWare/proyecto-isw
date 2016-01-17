@@ -28,7 +28,7 @@
         @endforeach
         </tbody>
     </table>
-    <!-- Paginacion -->
+    <!-- PAGINACION-->
     <div class="text-center"> {!! $varuser->render() !!}</div>
         </div>
 @endsection('contenido')
