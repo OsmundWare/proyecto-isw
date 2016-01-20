@@ -5,7 +5,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\participante;
-use App\usuario;
+use App\Usuario;
 use Illuminate\Http\Request;
 
 class GruposController extends Controller {
