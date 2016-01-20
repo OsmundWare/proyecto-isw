@@ -1,48 +1,44 @@
 @extends('admin.template.main')
-
 @section('contenido')
-    <h1>Solicitud de proyecto</h1>
+    <div class="panel panel-default">
 
-    {!! Form::open(['route'=>'sproyectos.store', 'method'=>'POST']) !!}
+        <br>
 
-    <div class="form-group">
+        <div class="panel-heading">Solicitudes de proyectos</div>
 
-        {!! Form::label('Nombre grupo:') !!}
-        {!! Form::text('nombre_grupo',null,
-        ['class'=>'form-control','placeholder'=>'texto',]) !!}
+        <table class="table table-responsive table-bordered">
+
+            <thead>
+            <tr>
+                <th> ID </th>
+                <th> Nombre Grupo </th>
+                <th> Titulo Proyecto </th>
+                <th> Tipo  </th>
+                <th> Descripcion </th>
+                <th> Estado </th>
+            </tr>
+
+
+            </thead>
+
+            <body>
+
+            @foreach($sproyecto as $sproyectos)
+                <tr>
+
+                    <td>{{$sproyectos->id}}</td>
+                    <td>{{$sproyectos->nombre_grupo}}</td>
+                    <td>{{$sproyectos->titulo_sp}}</td>
+                    <td>{{$sproyectos->tipo_sp}}</td>
+                    <td>{{$sproyectos->descripcion_sp}}</td>
+                    <td>{{$sproyectos->aprobacion_sp}}</td>
+
+
+
+            @endforeach
+            </body>
+
+        </table>
     </div>
 
-    <div class="form-group">
-
-        {!! Form::label('Titulo :') !!}
-        {!! Form::text('titulo_sp',null,
-        ['class'=>'form-control','placeholder'=>'texto',]) !!}
-    </div>
-
-    <div class="form-group">
-
-        {!! Form::label('Tipo de proyecto :') !!}
-        {!! Form::text('tipo_sp',null,
-        ['class'=>'form-control','placeholder'=>'texto',]) !!}
-    </div>
-
-    <div class="form-group">
-
-        {!! Form::label('Descripcion :') !!}
-        {!! Form::text('descripcion_sp',null,
-        ['class'=>'form-control','placeholder'=>'texto',]) !!}
-    </div>
-
-    <div class="form-group">
-        {!! Form::submit('Enviar',['class'=>'btn btn-primary']) !!}
-
-        {!! Form::close() !!}
-        @if($errors->any())
-            <ul class="alert alert-warning">
-                @foreach($errors->all() as $error)
-                    <li> {{$error}} </li>
-                @endforeach
-            </ul>
-    @endif
-</div>
 @stop
