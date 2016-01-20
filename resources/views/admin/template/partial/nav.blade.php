@@ -16,8 +16,20 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">GESTION DE PARTICIPANTES<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="{{route('admin.usuario.index')}}">Mostrar Lista Participantes</a></li>
                     <li><a href="{{route('admin.usuario.create')}}">Registrar Participante </a></li>
+                    <li><a href="http://146.83.198.35/~ieci1/index.php/admin/participante">Aprobar Registro Participantes</a></li>
+                    <li role="separator" class="divider"></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">GESTION DE PROYECTOS DE USUARIOS<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{route('sproyectos.create')}}">Crear Proyecto </a></li>
+                    <li><a href="{{route('sproyectos.index')}}">Listar Proyectos </a></li>
                     <li role="separator" class="divider"></li>
                 </ul>
             </li>

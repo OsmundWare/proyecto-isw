@@ -1,6 +1,7 @@
 <?php
 
 
+//RUTAS MIGUEL
 Route::group(['prefix' => 'admin'], function(){
 
     Route::resource('usuario','registrosController');
@@ -40,18 +41,12 @@ Route::get('ges',[
 
 
 
-Route::resource('sproyectos','SproyectosController');
 
 
 
 
 
-
-
-
-
-
-
+//RUTAS MARCOS
 Route::resource('grupos','GruposController');
 
 Route::get('grupos/{id}/agregar','GruposController@agregar');
@@ -59,8 +54,63 @@ Route::get('grupos/{id}/agregar','GruposController@agregar');
 Route::post('grupos','GruposController@index');
 
 
-//ee
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//RUTAS BAYRON
+Route::group(['prefix' => 'admin'], function(){
+
+    Route::resource('participante','ParticipanteController');
+    Route::get('participante/{id}/edit',[
+
+        'uses' => 'ParticipanteController@edit',
+        'as'   => 'admin.participante.destroy'
+
+    ]);
+
+});
+
+
+Route::resource('sproyectos','SproyectosController');
 
 
 
