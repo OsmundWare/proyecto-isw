@@ -3,11 +3,14 @@
 
 
 
-        <h2 class="text-center"   role="button" ></a>Proyecto Ingenieria de Software</h2>
+<a aria-haspopup="true" aria-expanded="true">
+        <h2 class="text-center">Gestion de Proyectos Ingenieria de Software</h2>
         <a href="{{route('welcome')}}">Inicio</a>
 
+</a>
 
 
+        <!-- OPCIONES BAYRON-->
         <ul class="nav navbar-nav navbar-right">
 
             <li class="dropdown">
@@ -21,17 +24,24 @@
         </ul>
 
 
+
+
+
         <!-- OPCIONES MARCOS-->
                 <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">GESTION DE GRUPOS<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="{{route('grupos.index')}}">ver grupos</a></li>
-                    <li><a href="{{route('grupos.create')}}">Registrar nuevo grupo</a></li>
+                    <li><a href="#">Crear Grupos</a></li>
+                    <li><a href="#">Listar Grupos</a></li>
                     <li role="separator" class="divider"></li>
                 </ul>
             </li>
         </ul>
+
+
+
+
 
 
         <!-- OPCIONES MIGUEL-->
@@ -48,7 +58,20 @@
         </ul>
 
 
+        <ul class="nav navbar-nav navbar-right">
 
-    </div><!-- /.navbar-collapse -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">ADMINISTRADOR<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{route('admin.proyecto.create')}}">Crear idea de Proyecto </a></li>
+                    <li><a href="{{route('admin.proyecto.index')}}">Mostrar Lista De Proyectos</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{{route('admin.proyecto.gestion')}}">Gestionar Proyectos</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
 
 </nav>
