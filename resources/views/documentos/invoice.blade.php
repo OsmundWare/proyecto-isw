@@ -4,35 +4,28 @@
 
         <div id="details" class="clearfix">
             <div id="invoice">
-                <h1>INVOICE {{ $invoice }}</h1>
+                <h1>Documento PDF</h1>
                 <div class="date">Date of Invoice: {{ $date }}</div>
             </div>
         </div>
-        <table border="0" cellspacing="0" cellpadding="0">
-            <thead>
-            <tr>
-                <th class="no">#</th>
-                <th class="desc">DESCRIPTION</th>
-                <th class="unit">UNIT PRICE</th>
-                <th class="total">TOTAL</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="no">{{ $data['quantity'] }}</td>
-                <td class="desc">{{ $data['description'] }}</td>
-                <td class="unit">{{ $data['price'] }}</td>
-                <td class="total">{{ $data['total'] }} </td>
-            </tr>
 
-            </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="2"></td>
-                <td >TOTAL</td>
-                <td>$6,500.00</td>
-            </tr>
-            </tfoot>
-        </table>
+        <div class="container-fluid">
+            <table class="table table-bordered" >
+                <th>ID Grupo</th>
+                <th>Nombre Grupo</th>
+                <th>Integrantes</th>
+                <tbody><div/>
+
+                @foreach($view as $grupo)
+                    <tr>
+                        <td>{!!  $grupo->id_grupo !!}</td>
+                        <td>{!!  $grupo->nombre_grupo !!}</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+            <!-- PAGINACION-->
+            <div class="text-center"> {!! $view->render() !!}</div>
+        </div>
 
 @endsection
