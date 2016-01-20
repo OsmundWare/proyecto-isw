@@ -53,7 +53,13 @@ Route::get('grupos/{id}/agregar','GruposController@agregar');
 
 Route::post('grupos','GruposController@index');
 
-Route::get('pdf', 'PdfController@invoice');
+//Route::get('documentos', 'PdfController@invoice');
+Route::get('documentos',[
+
+    'uses' => 'PdfController@invoice',
+    'as'   => 'documentos.invoice'
+//
+]);
 
 
 

@@ -2,7 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class desarrollo extends Model {
+class Desarrollo extends Model
+{
 
     protected $table= "desarrollos";
 

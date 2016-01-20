@@ -44,8 +44,8 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">GESTION DE GRUPOS<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Crear Grupos</a></li>
-                    <li><a href="#">Listar Grupos</a></li>
+                    <li><a href="{{route('grupos.create')}}">Crear Grupos</a></li>
+                    <li><a href="{{route('grupos.index')}}">Listar Grupos</a></li>
                     <li role="separator" class="divider"></li>
                 </ul>
             </li>

@@ -2,7 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class grupo extends Model {
+class Grupo extends Model
+{
 
     protected $table= "grupos";
     protected $primaryKey='id_grupo';

@@ -17,7 +17,7 @@ class ParticipanteController extends Controller {
 	 */
 	public function index()
 	{
-		$participante = Usuario::all();
+		$participante = usuario::all();
 		return view('participante.index', compact('participante'));
 	}
 
