@@ -1,5 +1,5 @@
 <?php namespace App;
-
+//rr
 use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model {
