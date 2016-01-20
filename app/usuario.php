@@ -18,3 +18,4 @@ class Usuario extends Model {
         'password'];
 
 }
+//uuu
