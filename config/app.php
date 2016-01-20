@@ -151,6 +151,8 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		'Barryvdh\DomPDF\ServiceProvider',
+
 	],
 
 	/*
@@ -198,14 +200,14 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-		'Form' 		=> 'Collective\Html\FormFacade',
-		'Html' 		=> 'Collective\Html\HtmlFacade',
 
 		/*
 		 *vendor aliases
 		 */
 		'Form' => 'Collective\Html\FormFacade',
 		'Html' => 'Collective\Html\HtmlFacade',
+
+		'PDF' => 'Barryvdh\DomPDF\Facade',
 	],
 
 ];
