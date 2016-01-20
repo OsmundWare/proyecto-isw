@@ -1,4 +1,5 @@
 @extends('admin.template.main')
+//
 @section('contenido')
     <div class="panel panel-default">
 
