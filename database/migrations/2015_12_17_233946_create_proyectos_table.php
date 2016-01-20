@@ -17,11 +17,11 @@ class CreateProyectosTable extends Migration {
 			$table->increments('id_proyecto')->unique();
 			$table->string('titulo',140);
 			$table->string('tipo_proyecto',255);
-			$table->string('descripcion',255);
-			$table->string('estado_registro_proyecto')->nullable()->default('pendiente');
+			$table->text('descripcion');
+			//$table->string('estado_registro_proyecto')->nullable()->default('pendiente');
 			$table->timestamps();
-			$table->integer('id_supervisor')->unsigned();
-			$table->foreign('id_supervisor')->references('id_supervisor')->on('supervisores')->onDelete('cascade');
+			//$table->integer('id_supervisor')->unsigned();
+			//$table->foreign('id_supervisor')->references('id_supervisor')->on('supervisores')->onDelete('cascade');
 		});
 	}
 
