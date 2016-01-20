@@ -1,4 +1,4 @@
-@extends('sproyectos.master')
+@extends('admin.template.main')
 
 @section('contenido')
     <h1>Solicitud de proyecto</h1>
