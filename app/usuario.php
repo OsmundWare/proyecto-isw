@@ -2,7 +2,7 @@
 //rr
 use Illuminate\Database\Eloquent\Model;
 
-class Usuario extends Model {
+class usuario extends Model {
 //
     protected $table= "usuarios";
     protected $primaryKey = 'rut_usuario';
@@ -14,8 +14,9 @@ class Usuario extends Model {
         'apellido_materno',
         'correo',
         'asignatura',
-        'aprobacion',
-        'password'];
+        'password',
+        'aprobacion'
+    ];
 
 }
 //uuu
